@@ -40,19 +40,59 @@ body {
 	font: 62.5% Verdana, Arial, Helvetica, sans-serif;
 	padding: 20px;
 }
+.mainNav {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  /*width: 175px;*/
+  border-left: 1px dashed #999;
+  overflow: hidden;
+}
+.mainNav li {
+  float: left;
+  width: 12em;
+}
 
-
+.mainNav a {
+  color: #000;
+  font-size: 11px;
+  text-decoration: none;
+  text-transform: uppercase;
+  border: 1px dashed #999;
+  border-left: none;
+  padding: 7px 5px 7px 30px;
+  display: block;
+  background-color: #E7E7E7;
+  background-image: url(images/nav.png);
+  background-repeat: no-repeat;
+  background-position: 0 2px;
+}
+.mainNav a:hover {
+  font-weight: bold;
+  background-color: #B2F511;
+  background-position: 3px 50%;
+}
+.home .homeLink,
+.feature .featureLink,
+.expert .expertLink,
+.quiz .quizLink {
+  background-color: #FFF;
+  background-position: 3px 100%;
+  padding-right: 15px;
+  padding-left: 30px;
+  font-weight: bold;
+}
 
 </style>
 </head>
-<body>
-  <ul>
-    <li><a href="/index.html">Home</a></li>
-    <li><a href="/features/">Features</a></li>
-    <li><a href="/experts/">Experts</a></li>
-    <li><a href="/quiz/">Quiz</a></li>
-    <li><a href="/projects/">Projects</a></li>
-    <li><a href="/horoscopes/">Horoscopes</a></li>
+<body class="quiz">
+  <ul class="mainNav">
+    <li><a href="/index.html" class="homeLink">Home</a></li>
+    <li><a href="/features/" class="featureLink">Features</a></li>
+    <li><a href="/experts/" class="expertLink">Experts</a></li>
+    <li><a href="/quiz/" class="quizLink">Quiz</a></li>
+    <li><a href="/projects/" class="homeLink">Projects</a></li>
+    <li><a href="/horoscopes/" class="homeLink">Horoscopes</a></li>
   </ul>
 </body>
 </html>
