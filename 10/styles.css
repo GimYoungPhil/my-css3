@@ -94,3 +94,32 @@ nav a {
 		0px -1px 1px rgba(000,000,000,0.2),
 		0px 1px 0px rgba(255,255,255,0.3);
 }
+
+nav a {
+  -webkit-transition: -webkit-transform .5s,
+                      background-color 1s ease-in .5s;
+}
+
+nav a:hover {
+  background-color: red;
+  -webkit-transform: scale(1.2);
+}
+
+.logo {
+  -webkit-animation: logo 3s;
+}
+
+@-webkit-keyframes logo {
+  0% {
+    -webkit-transform: rotate(0) scale(.75);
+    left: 120%;
+  }
+  50% {
+    -webkit-transform: rotate(-720deg) scale(.75);
+    left: 0;
+  }
+  100% {
+    -webkit-transform: rotate(0) scale(1);
+  }
+}
+
